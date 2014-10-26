@@ -1,4 +1,6 @@
-Features measured:
+##Codebook
+#Features measured:
+———————
 
 tBodyAcc-XYZ
 tGravityAcc-XYZ
@@ -18,10 +20,3 @@ fBodyAccJerkMag
 fBodyGyroMag
 fBodyGyroJerkMag
 
-What was done:
-1). brought training and test (avg) sets
-2). attached activity labels and participant/subject id
-3). kept std and mean of the above measurements
-4) listed these out by meas_type, measurement for each activity and subjected
-5) Subsetted to only the mean meas_types
-6) Attached the a column of mean measurements by activity, subject and meas_type.
