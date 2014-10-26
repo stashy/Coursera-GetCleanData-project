@@ -42,9 +42,9 @@ gsub("\\(\\)","",names(main4))->names(main4)
 gather(main4,meas_type,meas,-c(activity,subjectid))->main5
 
 # Just means data set
-JustMeans<-subset(main5,grepl("mean",main5$meas_type))
+JustMeans<-tbl_df(subset(main5,grepl("mean",main5$meas_type)))
 JustMeans2<-group_by(JustMeans,subjectid,activity)
-JustMeans3<-mutate(JustMeans2,average=mean(meas))
+JustMeans3<-summarize(JustMeans2,average=mean(meas))
 #write tidy dataset 
 write.table(JustMeans3,file="./tidy.txt",row.name=FALSE)
 
