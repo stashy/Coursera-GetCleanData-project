@@ -52,5 +52,3 @@ summarize(average=mean(meas))->summary
 
 write.table(summary,file="./tidy.txt",row.name=FALSE)
 
-
-
