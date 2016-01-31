@@ -45,7 +45,7 @@ gather(main4,meas_type,meas,-c(activity,subjectid))->FinalMain
 # This "FinalMain" dataset has Four Columns-- subjectID, Activity, Meas_type and Measure
 
 #Get a summary tidy dataset of means by subjectid, activity and meas type
-tbl_df(FinalMain)tbl_df(main5) %>%filter(grepl("mean",meas_type)) 
+tbl_df(FinalMain)%>%filter(grepl("mean",meas_type)) 
 %>%group_by(subjectid,activity,meas_type)%>% summarize(average=mean(meas))->summary
 
 write.table(summary,file="./tidy.txt",row.name=FALSE)
