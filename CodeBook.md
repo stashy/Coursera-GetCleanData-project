@@ -1,5 +1,5 @@
 ##Codebook
-#Features measured:
+###Features measured:
 ———————
 
 This data set has Mean and standard Deviation calculations 
@@ -8,7 +8,7 @@ for the following  4 (3dims + 1mag) * 5 features = 20 time measures;
 
 
 
-# XYZ Body and Gravity Acceleration, Jerk Gyroscope Signals
+### XYZ Body and Gravity Acceleration, Jerk Gyroscope Signals
 
 Raw measurements from samsung galaxy accelerometer and gyroscope 3-axial were captured
 at a constant rate. Calculations on and transformations of these measurements yielded the following features
@@ -19,7 +19,7 @@ in each dimension (X,Y and Z).
 * **tBodyGyro-XYZ** Gyroscope Body Signal
 * **tBodyGyroJerk-XYZ** Gyroscope Jerk Measurment
 
-# Magnitude Features
+### Magnitude Features
 
 Using these XYZ measures, magnitudes were calculated
 * **tBodyAccMag** Magnitute of Body Acceleration
@@ -28,7 +28,7 @@ Using these XYZ measures, magnitudes were calculated
 * **tBodyGyroMag**  Magnitude of Gyroscope signal 
 * **tBodyGyroJerkMag**  Magnitude of Gyroscope Jerk signal
 
-#  Frequency Features 
+###  Frequency Features 
 
 Time features above were converted using Fourier transforms into
 the following frequency features.
