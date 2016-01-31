@@ -1,9 +1,9 @@
 ## Coursera Getting and Cleaning Data
-# Project
+### Project Week 4 
 
 
 
-##What code does:
+####What code (run analysis) does:
 * Combines training and test sets into one Main set
 * Attaches activity labels and participant/subject id
 * Attaches feature lables to columns
